@@ -1,0 +1,13 @@
+Edit the following parts
+
+Original:
+         url = "http://{0}:{1}".format(machine.ip, CUCKOO_GUEST_PORT)
+
+Replace with:
+        url = "https://{0}:{1}".format(machine.ip, CUCKOO_GUEST_PORT)
+
+Orignal:
+        url = "http://%s/fog/management/index.php?%s" % (
+
+Replace with:
+        url = "%s?%s" % (
