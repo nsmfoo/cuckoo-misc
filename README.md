@@ -25,6 +25,8 @@ Example of EMET events retrieved from the guest:
      [u'EMET', 0, u'Error', u'<COMPUTERNAME>', None, u'EMET version 5.5.5871.31892\nEMET detected StackPivot mitigation in iexplore.exe\r\n\r\nStackPivot check failed:\n  Application \t: C:\\Program Files\\Internet Explorer\\iexplore.exe\n  User Name \t: <COMPUTERNAME>\\<USER>\n  Session ID \t: 1\n  PID \t\t: 0x71C (1820)\n  TID \t\t: 0x46C (1132)\n  API name \t: kernel32.WinExec\n  ReturnAddress \t: 0x000000007775C8FF\n  CalledAddress \t: 0x00000000775B8D80\n  Thread stack area range: [0x3172000..0x3180000]\n  StackPtr \t: 0x000000000543FB30\n']
      
      
+![alt text](cuckoo-emet.png "cuckoo-emet")     
+     
 * cuckoo-FOG_SSL.txt  - notes on how to use Cuckoo Physical with FOG SSL web interface
 
 By default Cuckoo Physical is unable to communicate with FOG if is configured to use HTTPS only, edit the config file below to get it to work: 
